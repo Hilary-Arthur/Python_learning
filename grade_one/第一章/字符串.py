@@ -39,3 +39,10 @@ print(hello + number + name)
 number = 123456
 message = "hello %s %d" % (name,number)
 print(message)
+
+number_1 = 12
+name_1 = "Tom"
+print(f"{name_1}的年龄为{number_1}")
+
+number_2 = 5
+print(f"{name_1} is older than his sister for {number_1 - number_2} years")
