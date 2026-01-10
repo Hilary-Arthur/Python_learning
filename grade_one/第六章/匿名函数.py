@@ -13,5 +13,5 @@ test_func(compute)
     这是计算逻辑的传递，而非数据的传递
 '''
 
-# lambda匿名函数,无法二次使用
+# lambda匿名函数,无法二次使用,且无法写多行
 test_func(lambda x,y:x+y)
