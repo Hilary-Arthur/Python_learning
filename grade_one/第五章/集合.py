@@ -50,3 +50,18 @@ print(f"集合3的长度为{num}")
 print(f"集合3为:{set_3}")
 for i in set_3:
     print(i)
+
+# 练习
+'''
+    my_list = ['黑马程序员','传智播客','黑马程序员','传智播客','Itcast','Itcast','best']
+    定义一个空集合
+    for循环遍历列表
+    将遍历得到的元素添加到集合
+    去重后的集合对象打印输出
+'''
+my_list = ['黑马程序员', '传智播客', '黑马程序员', '传智播客', 'Itcast', 'Itcast', 'best']
+my_set = set()
+for i in my_list:
+    my_set.add(i)
+
+print(my_set)

@@ -3,7 +3,7 @@
 每一个元素，可以是任意类型的数据，如字符串、数字、布尔等
 
 ## 数据容器的类型
-+ 列表（list）、元组（tuple）、字符串（str）、集合（set）、字典（disc）
++ 列表（list）、元组（tuple）、字符串（str）、集合（set）、字典（dict）
 
 ## 列表
 ### 字面量
@@ -136,3 +136,25 @@
 + 集合的遍历:
   + 集合不支持下标索引，因此没有办法while()
   + 但是可以使用for循环遍历
+
+## dict(字典、映射)
++ key和value有一个对应关系,通过key去找到其value
++ 字典的定义:
+  + {key:value,key:value,key:value,...,key:value}
+  + my_dict = {key:value,key:value,key:value,...,key:value}
+  + 定义空字典 my_dict = {} my_dict = dict()
++ 字典不允许key的重复
++ 字典的key和Value可以是任意的数据类型，key不能为字典，因此，字典可以嵌套
+
+## 字典的常用操作
++ 新增元素:字典[key]=value,结果:字典被修改，新增了元素
++ 更新元素：
+  + 语法:字典[key]=value，结果:字典被修改，元素被更新
+  + 由于字典key不可以重复,所以对已存在的key执行上述操作，就是更新value值
++ 删除元素:
+  + 语法:字典.pop(key),结果：获得指定key的value，同时字典被修改，指定key的数据被删除
++ 清空字典
+  + 语法:字典.clear(),结果：字典被修改，元素被清空
++ 获取全部的key
+  + 语法:字典.keys(),结果：得到字典中全部的key
++ 字典不能使用while循环遍历
