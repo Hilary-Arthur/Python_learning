@@ -50,5 +50,8 @@
   + 如果一个模块文件中有__all__变量，当使用from xxx import * 导入时，只能导入这个列表中的元素
 ## Python包
 ### 自定义包
-
++ [Python_package](Python_package)
++ [Python包.py](Python%E5%8C%85.py)
 ### 安装第三方Python包
++ 使用pip程序安装第三方包
++ 连接国内的网站进行包的安装,提高安装速度，添加-i + 网址
