@@ -1,15 +1,21 @@
 # 捕获异常
 try:
-    open("python.txt","r",encoding="UTF-8")
-    # 出现错误，被except接收
+    r = open("python.txt","r",encoding="UTF-8")
+    # 出现错误，被except接收，但是r没有被close
 except :
     print("出现异常，文件不存在，采用写方式打开")
     w = open("python.txt","w",encoding="UTF-8")
+    # 此处w已经被close了
+finally:
+    print("无论有没有异常我都会关闭文件的打开")
+    r.close()
 # 捕获指定异常,不能接受多个异常
 try:
     print(name)
 except NameError as e:
     print(f"name变量名称未定义:{e}")
+finally:
+    print("无论有没有异常我执行")
 # 捕获多个异常
 try:
     # print(name)
