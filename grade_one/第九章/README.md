@@ -14,3 +14,18 @@
     + 全局配置选项:针对整个图像进行配置(set_global_opts)
     + 系列配置选项:针对具体的轴数据进行配置
 ## 数据处理
++ 通过json模块对数据进行处理
++ 数据集来源:https://github.com/eAzure/COVID-19-Data/tree/master
++ 字段说明:
+  + id：数据编号
+  + confirmedCount：累计确诊
+  + confirmedIncr：新增确诊
+  + curedCount：累计治愈
+  + curedIncr：新增治愈
+  + currentConfirmedCount：现存确诊
+  + currentConfirmedIncr：新增现存确诊
+  + dateId：日期
+  + deadCount：累计死亡
+  + deadIncr：新增死亡
+  + suspectedCount：累计疑似
+  + suspectedCountIncr：新增疑似
