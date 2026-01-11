@@ -15,3 +15,5 @@ hello Python
 hello Python
 hello Python
 hello Python
+hello C/C++
+hello C/C++
