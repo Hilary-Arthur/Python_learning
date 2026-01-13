@@ -42,12 +42,12 @@ if errorlevel 1 (
     exit /b 1
 )
 
-:: 3. 拉取远程最新代码（避免推送冲突）
-echo 3. 执行 git pull origin master
-git pull origin master
-if errorlevel 1 (
-    echo 警告：git pull 操作失败（可能远程无 master 分支或网络问题），尝试直接推送...
-)
+@REM :: 3. 拉取远程最新代码（避免推送冲突）
+@REM echo 3. 执行 git pull origin master
+@REM git pull origin master
+@REM if errorlevel 1 (
+@REM     echo 警告：git pull 操作失败（可能远程无 master 分支或网络问题），尝试直接推送...
+@REM )
 
 :: 4. 推送到远程仓库
 echo 4. 执行 git push origin master
