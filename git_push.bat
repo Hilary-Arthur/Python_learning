@@ -50,7 +50,7 @@ if errorlevel 1 (
 @REM )
 
 :: 4. 推送到远程仓库
-echo 4. 执行 git push origin master
+echo 3. 执行 git push origin master
 git push github master
 git push gitee master
 git push gitnode master
