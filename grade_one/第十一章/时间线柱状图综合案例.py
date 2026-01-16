@@ -47,7 +47,7 @@ def build_bar(key,data):
     count = 10
     length = count
     for i in country_list:
-        if count > 0:
+        if count >= 0:
             tmp_list = list()
             tmp_list.append(i)
             tmp_list.append(data[key][i])
@@ -55,8 +55,8 @@ def build_bar(key,data):
             count -= 1
         else :
             break
-    i = 0
 
+    i = 0
     while i < len(sort_list):
         # 首先将数字转化为整数类型
         sort_list[i][1] = int(float(sort_list[i][1]))
@@ -67,7 +67,8 @@ def build_bar(key,data):
     for i in sort_list:
         data_list.append(i[1])
     bar = Bar()
-    bar.add_xaxis(country_list[0:length-1])
+    # 注意列表的特性
+    bar.add_xaxis(country_list[0:length])
     bar.add_yaxis(f"{key}年GDP",data_list,label_opts=LabelOpts(
         position="right"
     ))
